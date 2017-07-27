@@ -33,7 +33,11 @@ fieldset {
 legend {
     border: #0d093c 3px solid;
 }
-
+#loading{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+}
 /*#ansContainer{
     height: 85px;
     overflow: scroll;

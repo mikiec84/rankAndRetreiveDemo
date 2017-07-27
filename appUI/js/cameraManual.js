@@ -1,5 +1,4 @@
 $(document).ready(function () {
-	console.log("entered js")
 
 // Initializing Variables
 
@@ -11,6 +10,7 @@ $(document).ready(function () {
 	    documentList = $("#document-list"),
 	    queryResultList = $("#queryResultList"),
 	    queryAsked = $("#queryAsked"),
+	    loading = $("#loading"),
 
 	    pub_key = 'pub-c-50d4121d-e37d-44a1-a89f-659aff7bacb8',
 	    sub_key = 'sub-c-1d0ea8b6-4c13-11e7-8e91-0619f8945a4f';
@@ -43,7 +43,8 @@ $(document).ready(function () {
 	        	updateManualList(msg.userManual)
 	        }else if(msg.messagecode == '1' && msg.messagetype == "resp") {
 	        	console.log(msg.apidata.response.docs)
-	        	queryAsked.text(msg.userQuery);
+	        	queryAsked.text("Search Query : "+msg.userQuery);
+
 	        	updateQueryAnswer(msg.apidata.response.docs)
 	        }
 	    }
@@ -66,6 +67,8 @@ $(document).ready(function () {
     Description : Publishes the user query data to pubnub block
 *******************************************************************/
 	inputQuestionSubmit.click(function (event) {
+		loading.text("Querying Results ... ");
+		queryResultList.empty();
         var queryMessage = {
         					"messagecode":"1",
         					"command":"query-req",
@@ -94,7 +97,7 @@ $(document).ready(function () {
     Description : Fetches the Query Answer list from R&R Service and displays in UI
 ************************************************************************************/
 function updateQueryAnswer(apidata){
-
+	loading.empty();
 	for (var i = 0; i < apidata.length; i++) {
 		console.log(apidata.length)
 		var userData = {
