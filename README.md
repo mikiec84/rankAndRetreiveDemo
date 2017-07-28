@@ -12,13 +12,19 @@ Login to the Bluemix account with the valid credentials, and goto Catalog.
 
 Select the Document Conversion Service under the Watson Services. 
 
+![alt-tag](https://github.com/AravindNico/rankAndRetreiveDemo/tree/master/screenshots/doc_conv/doc_conversion_select.png)
+
 ## Step 3 :
 
 Give the service name and scroll down the page,select the Free plan (you can see more about pricing options in that page) and click on the "create" button.
 
+![alt-tag](https://github.com/AravindNico/rankAndRetreiveDemo/tree/master/screenshots/doc_conv/Screenshot-Document Conversion - IBM Bluemix - Mozilla Firefox-1.png)
+
 ## Step 4 :
 
 Once you create the service, it will redirect you to the homepage of the service. There, click on the "Service Credentials" to get the apikey to access the Document Conversion api. Make a note of this API key.
+
+![alt-tag](https://github.com/AravindNico/rankAndRetreiveDemo/tree/master/screenshots/doc_conv/Screenshot-Service Details - IBM Bluemix - Mozilla Firefox-1.png)
 
 ## Step 5 :
 
