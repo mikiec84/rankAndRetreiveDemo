@@ -44,7 +44,7 @@ Give the Name of the Event handler, Channel to communicate with the block and th
 
 ## Step 8 :
 
-Copy the block code in the text area from here, and save it. Update the Watson Visual Recognition API credentials on the code 
+Copy the [block code](https://github.com/AravindNico/rankAndRetreiveDemo/blob/master/block/cameraBlock.js) in the text area from here, and save it. Update the Watson Rank and Retrieve API credentials on the code 
 ( As per step 4 of "Watson Rank and Retrieve API" section in main README file)
 
 ## Step 9 :
