@@ -43,7 +43,7 @@ Once you create the service, it will redirect you to the homepage of the service
 ![alt-tag](https://github.com/AravindNico/rankAndRetreiveDemo/blob/master/screenshots/doc_conv/create_success.png)
 
 
-# Rank and Retrieve Service - Setting up
+# Retrieve and Rank Service - Setting up
 
 ## Step 1 :
 
@@ -70,11 +70,11 @@ Once you create the service, it will redirect you to the homepage of the service
 ![alt-tag](https://github.com/AravindNico/rankAndRetreiveDemo/blob/master/screenshots/rank_retrieve/rr_cred.png)
 
 
-# Working of Rank and Retrieve Api Demo
+# Training the Retrieve and Rank API with Camera User Manual
 
 ## Step 1 : 
 
-Open Watson's Rank and Retrieve Service [page](https://watson-retrieve-and-rank.ng.bluemix.net/) . Now we will create a solr cluster & collection and then upload the document and questions.
+Open Watson's Retrieve and Rank Service [page](https://watson-retrieve-and-rank.ng.bluemix.net/) . Now we will create a solr cluster & collection and then upload the document and questions.
 
 ## Step 2 :
 
