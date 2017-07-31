@@ -44,15 +44,15 @@ Give the Name of the Event handler, Channel to communicate with the block and th
 
 ## Step 8 :
 
-Copy the block code in the text area from [here](https://github.com/shyampurk/rankAndRetreiveDemo/blob/master/block/cameraBlock.js), and save it. Update the Watson Rank and Retrieve API credentials on the code 
-( As per step 4 of "Watson Rank and Retrieve API" section in main [README](https://github.com/shyampurk/rankAndRetreiveDemo/blob/master/README.md) file)
+Copy the block code in the text area from [here](https://github.com/shyampurk/rankAndRetreiveDemo/blob/master/block/cameraBlock.js), and save it. Update the Watson Retrieve and Rank API credentials on the code 
+( As per step 4 and 8 of "Rank and Retrieve Service - Setting up" section in main [README](https://github.com/shyampurk/rankAndRetreiveDemo/blob/master/README.md) file)
 
 Replace the username,password and id's in the following line in block code :
 
-    Username ==> line number 7 (replace with username got from step 4 under retrieve&Rank setup)
-    Password ==> line number 8 (replace with Password got from step 4 under retrieve&Rank setup)
-    Cluster ID ==> line number 9 (replace with Cluster ID got from step 8 under retrieve&Rank demo)
-    Solr Collection name ==> line number 10 (replace with Collection name got from step 8 under retrieve&Rank demo)
+    Username ==> line number 7 (replace with username got from step 4 under "Rank and Retrieve Service - Setting up" section)
+    Password ==> line number 8 (replace with Password got from step 4 under "Rank and Retrieve Service - Setting up" section)
+    Cluster ID ==> line number 9 (replace with Cluster ID got from step 8 under "Rank and Retrieve Service - Setting up" section)
+    Solr Collection name ==> line number 10 (replace with Collection name got from step 8 under "Rank and Retrieve Service - Setting up" section)
 
 ## Step 9 :
 
