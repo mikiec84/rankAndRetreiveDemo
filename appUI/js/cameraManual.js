@@ -24,6 +24,7 @@ $(document).ready(function () {
 	})
 	var queryManualList = {
         					"messagecode":"0",
+        					"messagetype":"req",
         					"command":"query-list"
         				}
     console.log(queryManualList)
@@ -71,6 +72,7 @@ $(document).ready(function () {
 		queryResultList.empty();
         var queryMessage = {
         					"messagecode":"1",
+        					"messagetype":"req",
         					"command":"query-req",
         					"manual":documentList.val(),
         					"userQuery":inputQuestion.val()

@@ -1,0 +1,119 @@
+Message codes 
+			0 - Query for camera manual list from kv store 
+			1 - Query for user Questions
+
+Message commands
+			query-list - requests for listing camera manuals
+			query-req - requests for user query answer
+
+Message types
+			req - request message from UI to block
+			resp - response message from block to UI
+
+PubNub Channels used
+			rank-retrieve-user-query - App to Block and vice-versa common data channel
+
+App to Block and vice-versa :
+===============================
+
+1) Reload the UI page operation/Query for camera manual list from kv store
+
+	request - 
+		format : 
+			{
+			"messagecode":<code here>,
+			"messagetype":<type here>,
+			"command":<query command>,
+			}	
+
+		example :
+		{
+			"messagecode":"0",
+			"messagetype":"req",
+			"command":"query-list"
+		}
+	response - 
+		format :
+		{
+			"messagecode":<code here>,
+			"messagetype":<type here>,
+			"command": <command>,
+			"userManual": {
+				"collectionName": <collection name>,
+				"model": <camera model>
+			}
+		}	
+		
+		example :
+			when there is data in the database
+				{
+					"messagecode":"0",
+					"messagetype":"resp",
+					"command": "query-list",
+					"userManual": {
+						"collectionName": "EOS550D",
+						"model": "Cannon EOS 550D"
+					}
+				}
+
+
+2) Query for user Questions from UI to block and its response 
+	request - 
+	format :
+		{
+			"messagecode":<code here>,
+			"messagetype":<type here>,
+			"command": <query command>,
+			"manual": <camera manual>, 
+			"userQuery": <user query>	
+		}
+	example :
+
+		{
+			"messagecode":"1",
+			"messagetype":"req",
+			"command": "query-req",
+			"manual": "Cannon EOS 550D", 
+			"userQuery": "aperture"
+		}
+	response -
+	format :
+		 {
+			"messagecode": <code here>,
+			"messagetype": <type here>,
+			"command": <query command>,
+			"manual": <camera manual>, 
+			"userQuery": <user query>,
+			"apidata": [
+				{
+					"title": <subheading>,
+					"body": <Data for each subheading>
+				},
+				{
+					...
+				}, ...
+			]
+		}
+
+
+	example : 	
+
+		{
+			"messagecode": "1",
+			"messagetype": "resp",
+			"command": "query-req",
+			"manual": "Cannon EOS 550D", 
+			"userQuery": "aperture",
+			"apidata": [
+				{
+					"title":"aperture ...",
+					"body":"Bluurred background ..."
+				},
+				{
+					...
+				}, ...
+			]
+		}
+
+		
+
