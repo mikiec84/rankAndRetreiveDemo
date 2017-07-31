@@ -1,6 +1,6 @@
-# Watson Rank and Retrieve API Demo
+# Watson Retrieve and Rank API Demo
 
-Cannon EOS550D camera user manual with rank and retrieve IBM watson service
+This repository contains the source code of a demo app that acts as a vertical search engine for a product manual. Cannon EOS550D camera user manual has been used as an example here. By parsing the camera manual through the Watson Retrieve and Rank API, this app provides a search interface to the users so that they can jump to the sections of the manual that contain the search words or phrases. 
 
 # Document Conversion Service - Setting up
 
