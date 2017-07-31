@@ -122,6 +122,6 @@ These are our cluster key and collection name
 
 ![alt-tag](https://github.com/AravindNico/rankAndRetreiveDemo/blob/master/screenshots/rank_retrieve/rr_uploaddoc.png)
 
-## Step 10 : Upload Sample Query Questions
+## Step 10 : Upload Sample Query Question
 
 ![alt-tag](https://github.com/AravindNico/rankAndRetreiveDemo/blob/master/screenshots/rank_retrieve/rrQuetions.png)
