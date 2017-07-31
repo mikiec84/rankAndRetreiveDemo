@@ -118,10 +118,12 @@ These are our cluster key and collection name
 
 ![alt-tag](https://github.com/AravindNico/rankAndRetreiveDemo/blob/master/screenshots/rank_retrieve/rrcluster.png)
 
-## Step 9 : Upload Document
+## Step 9 : Upload The Product Manual Document
 
 ![alt-tag](https://github.com/AravindNico/rankAndRetreiveDemo/blob/master/screenshots/rank_retrieve/rr_uploaddoc.png)
 
 ## Step 10 : Upload Sample Query Question
 
 ![alt-tag](https://github.com/shyampurk/rankAndRetreiveDemo/blob/master/screenshots/rank_retrieve/rrQuetions.png)
+
+For this demo app, we are not going to train the Retrieve and Rank API with the above questions. We can test it with some random keywords and phrases. 
