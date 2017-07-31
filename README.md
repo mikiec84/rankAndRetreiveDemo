@@ -60,7 +60,7 @@ Once you create the service, it will redirect you to the homepage of the service
 
 ## Step 1 : 
 
-Open Watson's Rank and Retrieve Service [page](https://watson-retrieve-and-rank.ng.bluemix.net/) to create cluster, collection, upload questions and documents .
+Open Watson's Rank and Retrieve Service [page](https://watson-retrieve-and-rank.ng.bluemix.net/) . Now we will create solr cluster & collection and then upload the document and questions.
 
 ## Step 2 :
 
