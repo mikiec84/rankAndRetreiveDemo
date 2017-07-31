@@ -120,9 +120,13 @@ These are our cluster key and collection name
 
 ## Step 9 : Upload The Product Manual Document
 
+Upload this [camera manual](eosrt2i-eos550d-im-en.pdf) to the collection
+
 ![alt-tag](https://github.com/AravindNico/rankAndRetreiveDemo/blob/master/screenshots/rank_retrieve/rr_uploaddoc.png)
 
 ## Step 10 : Upload Sample Query Question
+
+Upload this set of [sample questions](canonEOS-550-Questions.txt) to the Retrieve and Rank Service
 
 ![alt-tag](https://github.com/shyampurk/rankAndRetreiveDemo/blob/master/screenshots/rank_retrieve/rrQuetions.png)
 
