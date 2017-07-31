@@ -2,6 +2,20 @@
 
 This repository contains the source code of a demo app that acts as a vertical search engine for a product manual. Cannon EOS550D camera user manual has been used as an example here. By parsing the camera manual through the Watson Retrieve and Rank API, this app provides a search interface to the users so that they can jump to the sections of the manual that contain the search words or phrases. 
 
+# Demo Setup Overview
+
+This README file contains the instructions for setting up the services for hosting the demo app. The demo app is a standalone web page whose code is available [here](/appUI)
+
+The following services are required to be setup for deploying the backend for this app
+
+1. Watson Document Conversion
+
+2. Watson Retrieve and Rank
+
+3. PubNub Blocks (Refer this [README file](block/README.md) )
+
+You will need to clone this repository and must have a valid IBM and PubNub account. Both services offer free tier accounts for demo purposes. Once the services are setup, you can launch the app by opening the [main index file](appUI/index.html) in browser. 
+
 # Document Conversion Service - Setting up
 
 ## Step 1 :
@@ -29,7 +43,7 @@ Once you create the service, it will redirect you to the homepage of the service
 ![alt-tag](https://github.com/AravindNico/rankAndRetreiveDemo/blob/master/screenshots/doc_conv/create_success.png)
 
 
-# Rank and Retrieve Service - Setting up
+# Retrieve and Rank Service - Setting up
 
 ## Step 1 :
 
@@ -56,11 +70,11 @@ Once you create the service, it will redirect you to the homepage of the service
 ![alt-tag](https://github.com/AravindNico/rankAndRetreiveDemo/blob/master/screenshots/rank_retrieve/rr_cred.png)
 
 
-# Working of Rank and Retrieve Api Demo
+# Training the Retrieve and Rank API with Camera User Manual
 
 ## Step 1 : 
 
-Open Watson's Rank and Retrieve Service [page](https://watson-retrieve-and-rank.ng.bluemix.net/) . Now we will create a solr cluster & collection and then upload the document and questions.
+Open Watson's Retrieve and Rank Service [page](https://watson-retrieve-and-rank.ng.bluemix.net/) . Now we will create a solr cluster & collection and then upload the document and questions.
 
 ## Step 2 :
 
