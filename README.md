@@ -110,4 +110,4 @@ These are our cluster key and collection name
 
 ## Step 10 : Upload Sample Query Questions
 
-![alt-tag](https://github.com/AravindNico/rankAndRetreiveDemo/blob/master/screenshots/rank_retrieve/rr_uploadQue.png)
+![alt-tag](https://github.com/AravindNico/rankAndRetreiveDemo/blob/master/screenshots/rank_retrieve/rrQuetions.png)
